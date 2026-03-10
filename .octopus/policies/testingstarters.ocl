@@ -1,0 +1,18 @@
+name = "TestingStarters"
+violation_action = "block"
+
+conditions {
+    rego = <<-EOT
+            package testingstarters
+            
+            default result := {"allowed": true}
+            EOT
+}
+
+scope {
+    rego = <<-EOT
+            package testingstarters
+            
+            default evaluate := true
+            EOT
+}
